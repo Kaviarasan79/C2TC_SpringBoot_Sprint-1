@@ -9,7 +9,7 @@ public class OrderConfig implements WebMvcConfigurer {
 
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/orderservice/**")                    // <-- allow all endpoints
+        registry.addMapping("/orderservice/**")                   // <-- allow all endpoints
                 .allowedOrigins("http://localhost:3000")
                 .allowedMethods("GET", "POST", "PUT", "DELETE");
     }
